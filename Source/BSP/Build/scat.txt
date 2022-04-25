@@ -1,0 +1,57 @@
+ROOT 0x00010000
+ROOT-DATA 0x40000000
+
+VECTORTABLE_FILE_@0.bin 0x00000000
+{
+   VECTORTABLE_FILE_CODE_MEMORY  0x00000000
+   {
+      VectorTable.o (+RO)
+   }
+} 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;ALL_CODE_MEMORY_LOAD 0x00002000
+;{
+;   ALL_CODE_MEMORY_EXEC 0x00002000
+;   {
+;      * (+RO)
+;   }
+;
+;   ALL_RAM_MEMORY_EXEC 0x40000000
+;   {
+;      * (+RW, +ZI)
+;   }
+;}
+
+;ALL_RAM_MEMORY_LOAD 0x00008000
+;{
+;   ALL_RAM_MEMORY_EXEC 0x40000000
+;   {
+;      * (+RW, +ZI)
+;   }
+;}
+
+;;;; Each .o File can placed at any momory location ussing below lines.
+;;;; First function of the file will be loaded at address mentioned.
+
+;IOPinsFile_CODE_MEMORY 0x00020000
+;{
+;   IO  0x00020000
+;   {
+;      IoPins.o (+RO)
+;   }
+;} 
+
+;UARTFile_CODE_MEMORY 0x00030000
+;{
+;   IO  0x00030000
+;   {
+;      UART.o (+RO)
+;   }
+;}  
+
+
+

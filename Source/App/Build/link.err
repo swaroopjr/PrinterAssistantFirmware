@@ -1,0 +1,2 @@
+ARM Linker: (Warning) "App_Scat.txt", line 2 (near column 1) ROOT keyword will not be supported by future releases of the toolkit.
+ARM Linker: (Warning) "App_Scat.txt", line 4 (near column 1) ROOT-DATA keyword will not be supported by future releases of the toolkit.

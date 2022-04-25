@@ -1,0 +1,6 @@
+ARM Linker: (Warning) Conflicting requests for library armlib: variants _cn.32l and _i.16l
+ARM Linker: Both ARM & Thumb versions of IAP_Result present in image.
+ARM Linker: Both ARM & Thumb versions of IAP_Entry present in image.
+ARM Linker: Both ARM & Thumb versions of IAP_Command present in image.
+ARM Linker: (Warning) "scat.txt", line 2 (near column 1) ROOT keyword will not be supported by future releases of the toolkit.
+ARM Linker: (Warning) "scat.txt", line 4 (near column 1) ROOT-DATA keyword will not be supported by future releases of the toolkit.
